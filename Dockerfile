@@ -8,7 +8,7 @@ ARG JAR_FILE=build/libs/ci.cd.project-0.0.1-SNAPSHOT.jar
 COPY ${JAR_FILE} app.jar
 
 #(image 의 container 에서 필요한 저장소 경로)
-VOLUME /tmp
+#VOLUME /tmp
 
 EXPOSE 8080
 
