@@ -11,7 +11,7 @@ COPY ${JAR_FILE} app.jar
 VOLUME /tmp
 
 #(도커 컨테이너 내부에서 몇번 포트로 돌 것인가)
-EXPOSE 8080
+EXPOSE 8888
 
 #(실행할 명령어, 컨테이너 내부에 생성될 경로로 생각)
 ENTRYPOINT ["java", "-Dspring.profiles.active=docker", "-jar", "app.jar"]
