@@ -10,6 +10,7 @@ COPY ${JAR_FILE} app.jar
 #(image 의 container 에서 필요한 저장소 경로)
 VOLUME /tmp
 
+EXPOSE 8080
 
 #(실행할 명령어, 컨테이너 내부에 생성될 경로로 생각)
 ENTRYPOINT ["java", "-Dspring.profiles.active=docker", "-jar", "app.jar"]
